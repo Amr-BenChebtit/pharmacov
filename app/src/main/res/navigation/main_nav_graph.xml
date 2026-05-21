@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.wellys.pharmacovigilance.ui.dashboard.DashboardFragment"
+        android:label="@string/nav_dashboard"
+        tools:layout="@layout/fragment_dashboard">
+
+        <action
+            android:id="@+id/action_dashboard_to_declaration"
+            app:destination="@id/declaration_graph" />
+
+        <action
+            android:id="@+id/action_dashboard_to_caseDetail"
+            app:destination="@id/caseDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.wellys.pharmacovigilance.ui.profile.ProfileFragment"
+        android:label="@string/nav_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/caseDetailFragment"
+        android:name="com.wellys.pharmacovigilance.ui.casedetail.CaseDetailFragment"
+        android:label="@string/detail_title"
+        tools:layout="@layout/fragment_case_detail">
+        <argument
+            android:name="caseId"
+            app:argType="long" />
+    </fragment>
+
+    <!-- Nested graph for the multi-step declaration wizard.
+         All four step fragments share a single DeclarationViewModel scoped
+         to this graph (R.id.declaration_graph). -->
+    <navigation
+        android:id="@+id/declaration_graph"
+        app:startDestination="@id/step1PatientFragment">
+
+        <fragment
+            android:id="@+id/step1PatientFragment"
+            android:name="com.wellys.pharmacovigilance.ui.declaration.Step1PatientFragment"
+            android:label="@string/step1_title"
+            tools:layout="@layout/fragment_step1_patient">
+            <action
+                android:id="@+id/action_step1_to_step2"
+                app:destination="@id/step2ProductFragment" />
+        </fragment>
+
+        <fragment
+            android:id="@+id/step2ProductFragment"
+            android:name="com.wellys.pharmacovigilance.ui.declaration.Step2ProductFragment"
+            android:label="@string/step2_title"
+            tools:layout="@layout/fragment_step2_product">
+            <action
+                android:id="@+id/action_step2_to_step3"
+                app:destination="@id/step3EventFragment" />
+        </fragment>
+
+        <fragment
+            android:id="@+id/step3EventFragment"
+            android:name="com.wellys.pharmacovigilance.ui.declaration.Step3EventFragment"
+            android:label="@string/step3_title"
+            tools:layout="@layout/fragment_step3_event">
+            <action
+                android:id="@+id/action_step3_to_step4"
+                app:destination="@id/step4ReviewFragment" />
+        </fragment>
+
+        <fragment
+            android:id="@+id/step4ReviewFragment"
+            android:name="com.wellys.pharmacovigilance.ui.declaration.Step4ReviewFragment"
+            android:label="@string/step4_title"
+            tools:layout="@layout/fragment_step4_review" />
+    </navigation>
+
+</navigation>

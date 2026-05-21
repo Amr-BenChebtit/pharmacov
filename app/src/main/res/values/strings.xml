@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pharmacovigilance</string>
+
+    <!-- Login -->
+    <string name="login_title">Connexion</string>
+    <string name="login_subtitle">Déclarez et suivez les effets indésirables des médicaments.</string>
+    <string name="login_email_hint">Adresse email</string>
+    <string name="login_password_hint">Mot de passe</string>
+    <string name="login_button">Se connecter</string>
+    <string name="login_demo_hint">Comptes de démonstration :\npatient@demo.com / demo\ndoc@demo.com / demo</string>
+    <string name="login_error_empty">Veuillez remplir tous les champs.</string>
+    <string name="login_error_wrong">Identifiants incorrects.</string>
+
+    <!-- Bottom navigation -->
+    <string name="nav_dashboard">Tableau de bord</string>
+    <string name="nav_declare">Déclarer</string>
+    <string name="nav_profile">Profil</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_greeting">Bonjour, %1$s</string>
+    <string name="dashboard_subtitle">Vos déclarations</string>
+    <string name="dashboard_empty_title">Aucune déclaration pour le moment</string>
+    <string name="dashboard_empty_subtitle">Touchez le bouton + pour déclarer un effet indésirable.</string>
+    <string name="dashboard_fab_content">Nouvelle déclaration</string>
+    <string name="dashboard_logout">Se déconnecter</string>
+
+    <!-- Statuses -->
+    <string name="status_received">Reçu</string>
+    <string name="status_under_analysis">En cours d\'analyse</string>
+    <string name="status_info_requested">Infos demandées</string>
+    <string name="status_validated">Validé</string>
+    <string name="status_closed">Clôturé</string>
+
+    <!-- Severities -->
+    <string name="severity_minor">Mineur</string>
+    <string name="severity_serious">Sérieux</string>
+    <string name="severity_life_threatening">Mettant la vie en danger</string>
+    <string name="severity_fatal">Fatal</string>
+
+    <!-- Declaration wizard -->
+    <string name="declaration_title">Nouvelle déclaration</string>
+    <string name="declaration_step_label">Étape %1$d sur 4</string>
+    <string name="declaration_next">Suivant</string>
+    <string name="declaration_back">Précédent</string>
+    <string name="declaration_submit">Envoyer la déclaration</string>
+    <string name="declaration_cancel">Annuler</string>
+    <string name="declaration_submitted_toast">Déclaration envoyée avec succès.</string>
+
+    <!-- Step 1 — Patient -->
+    <string name="step1_title">Informations du patient</string>
+    <string name="step1_self_checkbox">Je suis le patient</string>
+    <string name="step1_initials_hint">Initiales du patient (ex. S.B.)</string>
+    <string name="step1_sex_label">Sexe</string>
+    <string name="step1_sex_male">Homme</string>
+    <string name="step1_sex_female">Femme</string>
+    <string name="step1_age_hint">Âge</string>
+    <string name="step1_error_initials">Les initiales sont requises.</string>
+    <string name="step1_error_age">L\'âge doit être un nombre entre 0 et 120.</string>
+
+    <!-- Step 2 — Product -->
+    <string name="step2_title">Produit suspecté</string>
+    <string name="step2_product_hint">Nom du médicament ou vaccin</string>
+    <string name="step2_scan_barcode">Scanner le code-barres</string>
+    <string name="step2_scan_unavailable">Fonctionnalité disponible bientôt.</string>
+    <string name="step2_error_product">Le nom du produit est requis.</string>
+
+    <!-- Step 3 — Event -->
+    <string name="step3_title">Description de l\'effet indésirable</string>
+    <string name="step3_description_hint">Décrivez les symptômes, leur évolution, et l\'issue.</string>
+    <string name="step3_severity_label">Gravité</string>
+    <string name="step3_onset_label">Date d\'apparition</string>
+    <string name="step3_pick_date">Choisir une date</string>
+    <string name="step3_error_description">La description est requise (10 caractères min).</string>
+    <string name="step3_error_date">La date d\'apparition est requise.</string>
+
+    <!-- Step 4 — Review -->
+    <string name="step4_title">Vérification</string>
+    <string name="step4_section_patient">Patient</string>
+    <string name="step4_section_product">Produit</string>
+    <string name="step4_section_event">Effet indésirable</string>
+    <string name="step4_edit">Modifier</string>
+
+    <!-- Case detail -->
+    <string name="detail_title">Détails de la déclaration</string>
+    <string name="detail_section_patient">Patient</string>
+    <string name="detail_section_product">Produit</string>
+    <string name="detail_section_event">Effet indésirable</string>
+    <string name="detail_section_timeline">Suivi du dossier</string>
+    <string name="detail_field_initials">Initiales</string>
+    <string name="detail_field_sex">Sexe</string>
+    <string name="detail_field_age">Âge</string>
+    <string name="detail_field_product_name">Nom</string>
+    <string name="detail_field_barcode">Code-barres</string>
+    <string name="detail_field_description">Description</string>
+    <string name="detail_field_severity">Gravité</string>
+    <string name="detail_field_onset">Date d\'apparition</string>
+    <string name="detail_field_submitted">Soumis le</string>
+    <string name="detail_field_not_provided">—</string>
+
+    <!-- Profile -->
+    <string name="profile_title">Profil</string>
+    <string name="profile_name">Nom</string>
+    <string name="profile_email">Email</string>
+    <string name="profile_type">Type d\'utilisateur</string>
+    <string name="profile_type_patient">Patient</string>
+    <string name="profile_type_pro">Professionnel de santé</string>
+    <string name="profile_profession">Profession</string>
+</resources>

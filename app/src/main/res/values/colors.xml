@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand colors -->
+    <color name="brand_primary">#1B5E94</color>
+    <color name="brand_primary_dark">#0C3D6A</color>
+    <color name="brand_accent">#2E9CDB</color>
+
+    <!-- Neutrals -->
+    <color name="bg_app">#F7F8FA</color>
+    <color name="bg_card">#FFFFFF</color>
+    <color name="text_primary">#1A1F2C</color>
+    <color name="text_secondary">#6B7280</color>
+    <color name="text_tertiary">#9CA3AF</color>
+    <color name="divider">#E5E7EB</color>
+
+    <!-- Status pill colors (background + text per status) -->
+    <color name="pill_received_bg">#E5E7EB</color>
+    <color name="pill_received_text">#374151</color>
+
+    <color name="pill_analysis_bg">#FEF3C7</color>
+    <color name="pill_analysis_text">#92400E</color>
+
+    <color name="pill_info_bg">#DBEAFE</color>
+    <color name="pill_info_text">#1E40AF</color>
+
+    <color name="pill_validated_bg">#D1FAE5</color>
+    <color name="pill_validated_text">#065F46</color>
+
+    <color name="pill_closed_bg">#E5E7EB</color>
+    <color name="pill_closed_text">#6B7280</color>
+
+    <!-- Severity accent strip on case cards -->
+    <color name="severity_minor">#9CA3AF</color>
+    <color name="severity_serious">#F59E0B</color>
+    <color name="severity_life_threatening">#EF4444</color>
+    <color name="severity_fatal">#7F1D1D</color>
+</resources>
