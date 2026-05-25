@@ -8,9 +8,9 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.widget.Toolbar;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
+import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.button.MaterialButton;
 import com.wellys.pharmacovigilance.R;
 import java.lang.NullPointerException;
@@ -49,13 +49,14 @@ public final class FragmentStep4ReviewBinding implements ViewBinding {
   public final MaterialButton submitButton;
 
   @NonNull
-  public final Toolbar toolbar;
+  public final MaterialToolbar toolbar;
 
   private FragmentStep4ReviewBinding(@NonNull LinearLayout rootView,
       @NonNull MaterialButton backButton, @NonNull TextView editEvent,
       @NonNull TextView editPatient, @NonNull TextView editProduct, @NonNull TextView eventSummary,
       @NonNull TextView patientSummary, @NonNull TextView productSummary,
-      @NonNull TextView stepLabel, @NonNull MaterialButton submitButton, @NonNull Toolbar toolbar) {
+      @NonNull TextView stepLabel, @NonNull MaterialButton submitButton,
+      @NonNull MaterialToolbar toolbar) {
     this.rootView = rootView;
     this.backButton = backButton;
     this.editEvent = editEvent;
@@ -151,7 +152,7 @@ public final class FragmentStep4ReviewBinding implements ViewBinding {
       }
 
       id = R.id.toolbar;
-      Toolbar toolbar = ViewBindings.findChildViewById(rootView, id);
+      MaterialToolbar toolbar = ViewBindings.findChildViewById(rootView, id);
       if (toolbar == null) {
         break missingId;
       }

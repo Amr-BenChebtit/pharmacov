@@ -1,66 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal"
     android:layout_marginHorizontal="16dp"
     android:layout_marginVertical="6dp"
-    android:background="@drawable/bg_card"
     android:clickable="true"
     android:focusable="true"
     android:foreground="?attr/selectableItemBackground"
-    android:minHeight="84dp">
-
-    <View
-        android:id="@+id/severityStrip"
-        android:layout_width="4dp"
-        android:layout_height="match_parent"
-        android:background="@color/severity_minor" />
+    app:cardCornerRadius="16dp"
+    app:cardElevation="2dp"
+    app:strokeColor="@color/divider"
+    app:strokeWidth="1dp"
+    app:cardBackgroundColor="@color/bg_card">
 
     <LinearLayout
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:orientation="vertical"
-        android:paddingHorizontal="16dp"
-        android:paddingVertical="14dp">
+        android:orientation="horizontal"
+        android:minHeight="92dp">
 
-        <TextView
-            android:id="@+id/productName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/text_primary"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:maxLines="2"
-            android:ellipsize="end"
-            tools:text="Paracétamol 500mg"
-            xmlns:tools="http://schemas.android.com/tools" />
+        <View
+            android:id="@+id/severityStrip"
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:background="@color/severity_minor" />
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="6dp"
-            android:orientation="horizontal"
-            android:gravity="center_vertical">
-
-            <com.wellys.pharmacovigilance.ui.common.StatusPillView
-                android:id="@+id/statusPill"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="16dp">
 
             <TextView
-                android:id="@+id/submittedAt"
-                android:layout_width="0dp"
+                android:id="@+id/productName"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_marginStart="12dp"
-                android:textColor="@color/text_secondary"
-                android:textSize="13sp"
-                android:gravity="end"
-                tools:text="Il y a 2 jours"
-                xmlns:tools="http://schemas.android.com/tools" />
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:maxLines="2"
+                android:ellipsize="end"
+                tools:text="Paracétamol 500mg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <com.wellys.pharmacovigilance.ui.common.StatusPillView
+                    android:id="@+id/statusPill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/submittedAt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="12dp"
+                    android:textColor="@color/text_tertiary"
+                    android:textSize="12sp"
+                    android:gravity="end"
+                    tools:text="Il y a 2 jours" />
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
-</LinearLayout>
+</com.google.android.material.card.MaterialCardView>

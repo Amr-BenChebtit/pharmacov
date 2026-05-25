@@ -1,21 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Brand colors -->
-    <color name="brand_primary">#1B5E94</color>
-    <color name="brand_primary_dark">#0C3D6A</color>
-    <color name="brand_accent">#2E9CDB</color>
+    <!-- Wellys-inspired palette: fresh teal-green wellness tones -->
+    <color name="brand_primary">#10B981</color>
+    <color name="brand_primary_dark">#047857</color>
+    <color name="brand_primary_light">#34D399</color>
+    <color name="brand_accent">#5EEAD4</color>
+    <color name="brand_accent_soft">#A7F3D0</color>
 
-    <!-- Neutrals -->
-    <color name="bg_app">#F7F8FA</color>
+    <!-- Surface neutrals: very soft mint-white, pure white cards -->
+    <color name="bg_app">#F4FBF9</color>
     <color name="bg_card">#FFFFFF</color>
-    <color name="text_primary">#1A1F2C</color>
-    <color name="text_secondary">#6B7280</color>
-    <color name="text_tertiary">#9CA3AF</color>
-    <color name="divider">#E5E7EB</color>
+    <color name="bg_subtle">#ECFDF5</color>
 
-    <!-- Status pill colors (background + text per status) -->
-    <color name="pill_received_bg">#E5E7EB</color>
-    <color name="pill_received_text">#374151</color>
+    <!-- Text -->
+    <color name="text_primary">#0F2922</color>
+    <color name="text_secondary">#4B5F58</color>
+    <color name="text_tertiary">#9BAFA7</color>
+    <color name="text_on_primary">#FFFFFF</color>
+    <color name="divider">#DCEDE6</color>
+
+    <!-- Status pill colors (tuned to harmonize with the green palette) -->
+    <color name="pill_received_bg">#E5EDEA</color>
+    <color name="pill_received_text">#384944</color>
 
     <color name="pill_analysis_bg">#FEF3C7</color>
     <color name="pill_analysis_text">#92400E</color>
@@ -26,11 +32,11 @@
     <color name="pill_validated_bg">#D1FAE5</color>
     <color name="pill_validated_text">#065F46</color>
 
-    <color name="pill_closed_bg">#E5E7EB</color>
-    <color name="pill_closed_text">#6B7280</color>
+    <color name="pill_closed_bg">#E5EDEA</color>
+    <color name="pill_closed_text">#6B7C77</color>
 
     <!-- Severity accent strip on case cards -->
-    <color name="severity_minor">#9CA3AF</color>
+    <color name="severity_minor">#9BAFA7</color>
     <color name="severity_serious">#F59E0B</color>
     <color name="severity_life_threatening">#EF4444</color>
     <color name="severity_fatal">#7F1D1D</color>

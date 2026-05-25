@@ -1,13 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="64dp"
-    android:height="64dp"
-    android:viewportWidth="64"
-    android:viewportHeight="64">
+    android:width="96dp"
+    android:height="96dp"
+    android:viewportWidth="96"
+    android:viewportHeight="96">
+
+    <!-- Soft rounded background with mint corner -->
     <path
         android:fillColor="@color/brand_primary"
-        android:pathData="M32,4 L56,12 L56,32 C56,44 46,54 32,60 C18,54 8,44 8,32 L8,12 Z" />
+        android:pathData="M20,8 L76,8 C82.6,8 88,13.4 88,20 L88,76 C88,82.6 82.6,88 76,88 L20,88 C13.4,88 8,82.6 8,76 L8,20 C8,13.4 13.4,8 20,8 Z" />
+
+    <!-- Pharmacy cross - horizontal arm -->
     <path
         android:fillColor="#FFFFFF"
-        android:pathData="M28,18 L36,18 L36,28 L46,28 L46,36 L36,36 L36,46 L28,46 L28,36 L18,36 L18,28 L28,28 Z" />
+        android:pathData="M28,40 L68,40 C70.2,40 72,41.8 72,44 L72,52 C72,54.2 70.2,56 68,56 L28,56 C25.8,56 24,54.2 24,52 L24,44 C24,41.8 25.8,40 28,40 Z" />
+
+    <!-- Pharmacy cross - vertical arm -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M40,28 L56,28 C58.2,28 60,29.8 60,32 L60,64 C60,66.2 58.2,68 56,68 L40,68 C37.8,68 36,66.2 36,64 L36,32 C36,29.8 37.8,28 40,28 Z" />
+
+    <!-- Leaf accent in the top-right corner -->
+    <path
+        android:fillColor="@color/brand_accent"
+        android:pathData="M68,16 C72,16 76,18 78,22 C80,26 80,32 76,36 C72,36 68,34 66,30 C64,26 64,20 68,16 Z" />
+
 </vector>

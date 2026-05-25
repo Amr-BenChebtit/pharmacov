@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:paddingVertical="12dp">
+
+    <View android:id="@+id/stepDot1"
+        android:layout_width="8dp" android:layout_height="8dp"
+        android:layout_marginHorizontal="6dp"
+        android:background="@drawable/bg_step_dot_inactive" />
+
+    <View android:id="@+id/stepDot2"
+        android:layout_width="8dp" android:layout_height="8dp"
+        android:layout_marginHorizontal="6dp"
+        android:background="@drawable/bg_step_dot_inactive" />
+
+    <View android:id="@+id/stepDot3"
+        android:layout_width="8dp" android:layout_height="8dp"
+        android:layout_marginHorizontal="6dp"
+        android:background="@drawable/bg_step_dot_inactive" />
+
+    <View android:id="@+id/stepDot4"
+        android:layout_width="8dp" android:layout_height="8dp"
+        android:layout_marginHorizontal="6dp"
+        android:background="@drawable/bg_step_dot_inactive" />
+</LinearLayout>
